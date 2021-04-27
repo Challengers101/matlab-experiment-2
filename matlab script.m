@@ -7,11 +7,20 @@ xlim([-4 8])
 ylim([-3 4])
 %% part 2 a
 N = 12;
-M = 10; 
+M = 4;   %4, 5, 7, 10;  
 n = 0:(2*N-1);
 Xm = sin(2*pi*(M/N)*n);
 stem (n, Xm);
 axis('square');
 xlim([-1 24])
 ylim([-2 2])
-%%
+%% part 2 b
+w=(2*pi)/5;
+k = 1; %2, 4, 6;
+n = 0:9;
+Xk = sin(w*k*n);
+stem (n, Xk);
+axis('square');
+xlim([-1 10])
+ylim([-2 2])
+%% 
