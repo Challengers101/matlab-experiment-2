@@ -5,5 +5,13 @@ stem (n, x);       %stem (n+2, x);    stem (n-1, x);   stem (-n, x);  stem (-n+1
 axis('square');
 xlim([-4 8])
 ylim([-3 4])
-%% 
-
+%% part 2 a
+N = 12;
+M = 10; 
+n = 0:(2*N-1);
+Xm = sin(2*pi*(M/N)*n);
+stem (n, Xm);
+axis('square');
+xlim([-1 24])
+ylim([-2 2])
+%%
