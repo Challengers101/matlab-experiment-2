@@ -23,4 +23,15 @@ stem (n, Xk);
 axis('square');
 xlim([-1 10])
 ylim([-2 2])
-%% 
+%% part 3
+n1= 0;
+n2 = 9;
+n = n1:n2;
+x = sin(2*pi/10*n);
+stem(n,x);
+axis('square');
+xlim([-1 13])
+ylim([-2 2])
+e = sum(x.^2)
+p = e/(n2-n1+1)
+
